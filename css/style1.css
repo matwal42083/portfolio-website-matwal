@@ -1,0 +1,327 @@
+/*   font-family: 'Anton', sans-serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Lobster Two', sans-serif;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Passion One', sans-serif;
+font-family: 'Paytone One', sans-serif;
+font-family: 'Philosopher', sans-serif;       */
+
+
+
+
+
+/* Styles for Dark mode feature*/
+:root {
+ --background-color: #fff;
+ --text-color: #000;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.dark_theme{
+    --background-color: #000;
+    --text-color: #fff;
+}
+
+.toggle-btn {
+    background-color: rgb(30, 99, 182);
+    padding: 6px 3px 5px 3px;
+    height: 20px;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid black;
+    margin: 0px 0px 0px 10px;
+
+}
+
+
+/* End of style for dark mode*/
+
+/* My image and text around it*/
+
+img {
+    width: 185px;
+    height: 185px;
+    margin: 0px 0px 0px 18px;
+    border-radius: 50%;
+    border: 5px solid rgb(30, 99, 182)
+}
+
+ .container_head h2 {
+  font-family: 'Lobster Two', sans-serif;
+ }
+
+.nav li a {
+  font-family: 'Passion One', sans-serif;
+  font-size: 20px;
+  margin: 60px 20px 0px 20px;
+}
+
+.logo h2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+/* Styles for the nav links*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    list-style-position: inside;
+    line-height: 1px;
+  
+}
+
+li {
+    display: inline;
+margin: 0px 20px 0px 20px;
+   
+}
+header {
+  background-color: blue;
+}
+
+/* Flexbox for the header*/
+
+.container_head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    flex-direction: row;
+    flex-wrap:  nowrap;
+    gap: 20px;
+    padding: 20px 0px 20px 0px;
+}
+
+/* main content styles for the paragraph*/
+h3 {
+    text-indent: 60px;
+}
+.content p {
+    text-indent: 60px;
+    font-family: 'Philosopher', sans-serif;    
+}
+
+
+.content h3 {
+  font-family: 'Lobster Two', sans-serif;
+}
+
+
+
+/* Footer styles*/
+footer {
+    background-color: rgba(177, 171, 188, 0.311);
+    padding: 0px 0px 15px 0px;
+    border-top:3px solid rgb(228, 224, 224);
+}
+
+
+.socialmedia_container {
+    text-align: center;
+}
+
+  footer p {
+    padding:0px 0px 20px 0px;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;   
+    font-size: 16px; 
+
+}
+
+/* individual tabs for social media icons*/
+
+  .iconLink1 {
+    background-color: rgb(24 119 242);
+    width: 50px;
+    padding: 8px 5px 8px 5px;
+    border-radius: 10px;
+    color:#fff;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 18px;
+    box-shadow: -3px 4px 4px rgb(109, 107, 107);
+  }
+
+  .iconLink2 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 50px;
+    padding: 8px 5px 8px 5px;
+    border-radius: 10px;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 18px;
+    box-shadow: -2px 3px 3px rgb(107, 106, 106);
+  }
+
+  .iconLink3 {
+    background-color:rgb(22 102 197);
+    width:50px;
+    padding: 8px 5px 8px 5px;
+    border-radius: 10px;
+    box-shadow: -3px 4px 4px rgb(103, 103, 103);
+  }
+
+  .iconLink4 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 50px;
+    padding: 8px 5px 8px 5px;
+    border-radius: 10px;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 18px;
+    box-shadow: -2px 3px 3px rgb(107, 105, 105);
+  }
+ 
+  .fa-brands {
+    font-size: 18px;
+    color:white;
+  }
+ 
+ #icon1 {
+    color:white;
+    
+    
+ }
+#icon2 {
+  color:white;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 18px;
+}
+
+
+
+/* .social_media_container{
+  /*  display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: inline;
+   }  
+.icon_link1 {
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  background-color: #1877f2; 
+  transition: width 1s;  
+  transition-timing-function: cubic-bezier(0, 0, 1, 1);  
+  -webkit-transition: width 1s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);                    
+  border-radius: 8px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+
+.icon_link1 a {
+    color:#1877f2;
+ }
+
+
+.icon_link1:hover{
+    width:100px;
+}
+
+
+
+.icon_link2 {
+    position: relative;
+    overflow: hidden;
+    width: 50px; 
+    height: 50px; 
+    background-color: #000000;
+    transition: width 1s;  
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);  
+    -webkit-transition: width 1s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);   
+    border-radius: 8px; 
+     display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:white;
+    text-align: center;
+
+    
+      
+  }
+  
+ .icon_link2 a{
+    color: rgb(0, 0, 0);
+ }
+
+
+  .icon_link2:hover{
+    width:100px;
+    color:white;
+}
+
+  .icon_link3 {
+    position: relative;
+    overflow: hidden;
+    width: 50px; 
+    height: 50px;
+    background-color: rgba(16, 76, 218, 0.849);
+    transition :width 1s;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);  
+    -webkit-transition: width 1s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1); 
+    border-radius: 8px;  Optional: Rounded corners 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:rgb(0, 0, 0); 
+    text-align: center;
+}
+
+.icon_link3:hover {
+    width:100px;
+}
+
+
+  .icon_link4 {
+    position: relative;
+    overflow: hidden;
+    width: 50px; 
+    height: 50px; 
+    background-color: #000000;
+    transition :width 1s;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);  
+    -webkit-transition: width 1s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);  
+    border-radius: 8px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:white;
+    text-align: center;  
+  }
+  .icon_link4 a {
+    color: white;
+ }
+ .icon_link4:hover {
+    width:100px;
+}
+
+i{
+ margin-top: 12px;
+}
+
+
+*/

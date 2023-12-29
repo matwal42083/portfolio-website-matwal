@@ -1,0 +1,206 @@
+/*      font-family: 'Anton', sans-serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Lobster Two', sans-serif;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Passion One', sans-serif;
+font-family: 'Paytone One', sans-serif;
+font-family: 'Philosopher', sans-serif;           */
+
+
+
+
+
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+   }
+   
+   body {
+       background-color: var(--background-color);
+       color: var(--text-color);
+   }
+   
+   .dark_theme{
+       --background-color: #000;
+       --text-color: #fff;
+   }
+
+   .side-headline h2 {
+    margin: 5px 0px 10px 25px;
+    font-family: 'Lobster Two', sans-serif; 
+    font-size: 28px;
+   }
+   
+   .toggle-btn {
+    background-color: rgb(30, 99, 182);
+    padding: 6px 3px 5px 3px;
+    height: 20px;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0px 0px 0px 10px;
+    border: 2px solid black;
+   }
+
+
+
+
+   /* Navbar stlyes*/
+   .nav {
+    font-size: 20px;
+    line-height: 2px;
+
+   }
+
+   .nav li a {
+    font-family: 'Passion One', sans-serif;
+    margin: 0px 30px 0px 30px;
+    font-size: 20px;
+   }
+
+   li a {
+    text-decoration: none;
+    color: black;
+  
+   
+   }
+
+   .content h4 {
+    font-family: 'Lobster Two', sans-serif;
+   }
+
+   .content p {
+    font-family: 'Philosopher', sans-serif;    
+   }
+
+   li {
+    list-style: none;
+    list-style-position: inside;
+    display: inline;
+    margin: 0px 20px 0px 20px;
+   }
+
+   .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+   }
+
+   .flex-container  {
+    background-color: rgb(30, 215, 96);
+    border:#000 3px solid;
+    border-radius: 0px 5px 5px 5px;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    margin: 0px 0px 50px 0px;
+   }
+   iframe {
+    width: 400px;
+    height: 500px;
+   }
+
+   
+
+   .header-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    flex-direction: row;
+    flex-wrap:  nowrap;
+    gap: 20px;
+    background-color: royalblue;
+    padding: 20px 0px 20px 0px;
+   }
+
+   h4 {
+    font-size: 25px;
+    text-decoration: underline;
+   }
+
+   .spotify {
+    background-color: black;
+    color: rgb(33, 215, 96);
+    width:600px;
+    height:50px;
+    text-decoration: none;
+    padding:6px 3px 2px 3px;
+    border: 3px solid rgb(33, 215, 96);
+    margin: 5px 0px 0px 0px;
+ 
+   }
+
+   .spotify .fa-brands {
+    font-size: 30px;
+    margin: 0px 10px 0px 10px;
+   }
+   /* Footer styles*/
+/* Footer styles*/
+footer {
+    background-color: rgba(177, 171, 188, 0.311);
+    padding: 0px 0px 15px 0px;
+    border-top:3px solid rgb(228, 224, 224);
+}
+
+
+.socialmedia_container {
+    text-align: center;
+}
+
+  footer p {
+    padding:0px 0px 20px 0px;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;    
+}
+
+/* individual tabs for social media icons*/
+
+  .iconLink1 {
+    background-color: rgb(24, 119, 242);
+    width: 50px;
+    padding: 8px 5px 8px 5px;
+    border-radius: 10px;
+    color:white;
+    font-family: 'Paytone One', sans-serif;
+  }
+
+  .iconLink2 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 50px;
+    padding: 8px 5px 8px 5px;
+    border-radius: 10px;
+    font-family: 'Paytone One', sans-serif;
+  }
+
+  .iconLink3 {
+    background-color: rgb(22, 109, 197);
+    width:50px;
+    padding: 8px 5px 8px 5px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+  }
+
+  .iconLink4 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 50px;
+    padding: 8px 5px 8px 5px;
+    border-radius: 10px;
+    font-family: 'Paytone One', sans-serif;
+  }
+ 
+  .fa-brands {
+    font-size: 18px;
+  }
+ 
+ #icon1 {
+    color:white;
+    
+ }
+
+ #icon2 {
+  color: white;
+ }
