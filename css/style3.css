@@ -6,8 +6,9 @@ font-family: 'Passion One', sans-serif;
 font-family: 'Paytone One', sans-serif;
 font-family: 'Philosopher', sans-serif;     */
 
+/* Header flexbox layout */
 .header-container {
-  background-color: rgb(82, 82, 227);
+  background-color: rgba(34, 34, 57, 0.936);
   display: flex;
   justify-content: space-evenly;
   align-items: space-evenly;
@@ -38,9 +39,7 @@ font-family: 'Philosopher', sans-serif;     */
    
    }
 
-   .nav {
-    margin: 0px 0px 0px 0px ;
-   }
+
 
 
 
@@ -52,7 +51,9 @@ font-family: 'Philosopher', sans-serif;     */
     margin: 0px 20px 0px 20px;
 
    }
-
+   .nav {
+    margin: 0px 0px 0px 0px ;
+   }
     
 
    li a {
@@ -129,61 +130,30 @@ img {
 }
 
 /* Footer styles*/
-footer {
-    background-color: rgba(177, 171, 188, 0.311);
-    padding: 0px 0px 15px 0px;
-    border-top:3px solid rgb(228, 224, 224);
+
+.footer_container {
+  background-color: rgba(133, 137, 140, 0.336);
+  text-align: center;
 }
-
-
-.socialmedia_container {
-    text-align: center;
-}
-
-  footer p {
-    padding:0px 0px 20px 0px;
-    text-align: center;
-    font-family: 'Philosopher', sans-serif; 
-}
-
-
-/* individual tabs for social media icons*/
-
-  .iconLink1 {
-    background-color: rgb(24, 119, 242);
-    width: 50px;
-    padding: 8px 5px 8px 5px;
-    border-radius: 10px;
-  }
-
-  .iconLink2 {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    width: 50px;
-    padding: 8px 5px 8px 5px;
-    border-radius: 10px;
-  }
-
-  .iconLink3 {
-    background-color: rgb(22, 109, 197);
-    width:50px;
-    padding: 8px 5px 8px 5px;
-    border-radius: 10px;
-  }
-
-  .iconLink4 {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    width: 50px;
-    padding: 8px 5px 8px 5px;
-    border-radius: 10px;
-  }
  
-  .fa-brands {
-    font-size: 18px;
-  }
+.footer_container p {
+  font-size: 18px;
+}
  
- #icon1 {
-    color:white;
-    
- }
+.footer_container a i {
+  font-size: 25px;
+  margin: 0px 20px 0px 20px;
+  color: black;
+}
+
+.footer_container #copyright {
+   font-size: 15px;
+}
+
+#fb {
+  color: rgb(24, 119, 242);
+}
+
+#link {
+  color:rgb(30, 99, 182);
+}
