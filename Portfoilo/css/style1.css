@@ -1,0 +1,342 @@
+/*   font-family: 'Anton', sans-serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Lobster Two', sans-serif;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Passion One', sans-serif;
+font-family: 'Paytone One', sans-serif;
+font-family: 'Philosopher', sans-serif;       */
+
+/* Styles for the header, flexbox layout with toggle btn for dark and light mode*/
+
+
+header {
+  background-image: url("https://i.ibb.co/f2QGhsT/free-Code-Camp.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity:0.9;
+  
+}
+
+
+/* Flexbox for the header*/
+
+.container_head {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-direction: row;
+  flex-wrap:  nowrap;
+  gap: 20px;
+  padding: 20px 0px 20px 0px;
+  width:100%;
+  height: auto;
+  box-shadow: 6px 6px 5px rgba(102, 102, 102, 0.682);
+}
+
+
+/* Styles for Dark mode feature*/
+
+
+.toggle-btn {
+    background-color:#217eac;
+    padding: 6px 3px 5px 3px;
+    height: 20px;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid black;
+    margin: 0px 0px 0px 10px;
+
+}
+
+
+/* End of style for dark mode*/
+
+/* My image and text around it*/
+
+img {
+    width: 185px;
+    height: 185px;
+    margin: 0px 0px 0px 18px;
+    border-radius: 50%;
+    border: 5px solid #217eac;
+}
+
+.content h3 {
+  font-family: 'Lobster Two', sans-serif; 
+}
+
+.content p {
+  font-family: 'Philosopher', sans-serif; 
+  background-color: rgba(195, 194, 194, 0.353);
+  padding: 20px 20px 20px 20px;
+  text-indent: 45px;
+  word-spacing: 0.015em;
+  font-size: 17px;
+  letter-spacing: 0.0050em;
+  box-shadow: 6px 6px 5px rgba(134, 134, 134, 0.412);
+}
+
+ .container_head h2 {
+  font-family: 'Lobster Two', sans-serif;
+ }
+
+
+
+.logo h2 {
+    color:#217eac;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+}
+
+/* Styles for the nav links*/
+
+.nav li a {
+  font-family: 'Passion One', sans-serif;
+  padding: 4px 0px 4px 0px;
+  font-size: 20px;
+  margin: 0px 20px 0px 20px;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    list-style-position: inside;
+    line-height: 1.5px;
+    
+  
+}
+
+li {
+  display: inline;
+  margin: 0px 20px 0px 20px;
+   
+}
+.nav li a:hover {
+  color:#217eac;
+}
+
+/* main content styles for the paragraph*/
+.footer_container {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  height: 40px;
+}
+
+footer p {
+  font-family: 'Philosopher', sans-serif;
+}
+ 
+.footer_container p {
+  font-size: 15px;
+  font-family: 'Philosopher', sans-serif; 
+  padding: 5px 0px 5px 0px;
+}
+ 
+.footer_container a i {
+  font-size: 20px;
+  margin: 0px 20px 0px 20px;
+  color: black;
+}
+
+.footer_container #copyright {
+   font-size: 11px;
+}
+
+#fb {
+  color: rgb(24, 119, 242);
+}
+
+#link {
+  color:rgb(30, 99, 182);
+}
+
+/* @Media Query styles here*/
+
+@media (max-width: 988px) {
+  .container_head li{
+    display: block;
+    margin: 50px 0px 50px 0px;
+    }
+    .container_head .toggle-btn {
+      margin: 0px 0px 0px 25px;
+    }
+    .container_head ul li {
+      line-height: -2.5;
+    }
+}
+
+@media (max-width: 500px) {
+  .container_head {
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container_head h2 {
+    font-size: 18px;
+  }
+  .container_head img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .nav li a {
+    margin: 20px 15px 20px 0px;
+    font-size: 10px;
+    font-family: 'Passion One', sans-serif;
+    display: block;
+  }
+  .toggle-btn {
+    background-color: rgb(30, 99, 182);
+    padding: 6px 3px 5px 3px;
+    height: 10px;
+    width: 50px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 8px;
+    border: 1px solid black;
+    margin: 0px 0px 0px 10px;
+
+}
+
+
+
+}
+
+/* .social_media_container{
+  /*  display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: inline;
+   }  
+.icon_link1 {
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  background-color: #1877f2; 
+  transition: width 1s;  
+  transition-timing-function: cubic-bezier(0, 0, 1, 1);  
+  -webkit-transition: width 1s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);                    
+  border-radius: 8px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+
+.icon_link1 a {
+    color:#1877f2;
+ }
+
+
+.icon_link1:hover{
+    width:100px;
+}
+
+
+
+.icon_link2 {
+    position: relative;
+    overflow: hidden;
+    width: 50px; 
+    height: 50px; 
+    background-color: #000000;
+    transition: width 1s;  
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);  
+    -webkit-transition: width 1s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);   
+    border-radius: 8px; 
+     display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:white;
+    text-align: center;
+
+    
+      
+  }
+  
+ .icon_link2 a{
+    color: rgb(0, 0, 0);
+ }
+
+
+  .icon_link2:hover{
+    width:100px;
+    color:white;
+}
+
+  .icon_link3 {
+    position: relative;
+    overflow: hidden;
+    width: 50px; 
+    height: 50px;
+    background-color: rgba(16, 76, 218, 0.849);
+    transition :width 1s;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);  
+    -webkit-transition: width 1s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1); 
+    border-radius: 8px;  Optional: Rounded corners 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:rgb(0, 0, 0); 
+    text-align: center;
+}
+
+.icon_link3:hover {
+    width:100px;
+}
+
+
+  .icon_link4 {
+    position: relative;
+    overflow: hidden;
+    width: 50px; 
+    height: 50px; 
+    background-color: #000000;
+    transition :width 1s;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);  
+    -webkit-transition: width 1s;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 1, 1);  
+    border-radius: 8px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color:white;
+    text-align: center;  
+  }
+  .icon_link4 a {
+    color: white;
+ }
+ .icon_link4:hover {
+    width:100px;
+}
+
+i{
+ margin-top: 12px;
+}
+
+
+*/

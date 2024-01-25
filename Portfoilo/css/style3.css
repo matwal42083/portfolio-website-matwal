@@ -1,0 +1,173 @@
+/*      font-family: 'Anton', sans-serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Lobster Two', sans-serif;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Passion One', sans-serif;
+font-family: 'Paytone One', sans-serif;
+font-family: 'Philosopher', sans-serif;     */
+
+/* Header flexbox layout */
+.header-container {
+  background-color: rgba(34, 34, 57, 0.936);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-direction: row;
+  flex-wrap:  nowrap;
+  gap: 20px;
+  padding: 20px 0px 20px 0px;
+  box-shadow: 6px 6px 5px rgba(102, 102, 102, 0.682);
+}
+
+
+
+.side-headline h2 {
+    margin: 0px 20px 0px 0px;
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 27px;
+    color:#217eac;
+   }
+   
+   .toggle-btn {
+    background-color: rgb(30, 99, 182);
+    padding: 6px 3px 5px 3px;
+    height: 20px;
+    width: 100px;
+    border:2px solid black;   
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 6px 20px 0px 0px;
+   
+   }
+
+
+
+
+
+
+   /* Navbar stlyes*/
+   .nav li  a{
+    line-height: 2px;
+    font-family: 'Passion One', sans-serif;
+    margin: 0px 20px 0px 20px;
+
+   }
+   .nav {
+    margin: 0px 0px 0px 0px ;
+   }
+    
+
+   li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+   }
+
+   li {
+    list-style: none;
+    list-style-position: inside;
+    display: inline;
+    margin: 0px 20px 0px 20px;
+   }
+ 
+  
+  .nav li a:hover {
+    color:#217eac;
+  }
+
+   
+
+   h4 {
+    font-size: 25px;
+    text-decoration: underline;
+   }
+
+
+
+/* Main Content for the Page*/
+.content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+   
+    
+}
+
+.content-container h3 {
+  font-family: 'Anton', sans-serif;
+}
+
+.code-gallery-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: left;
+  gap:10px;
+  margin: 0px 0px 20px 0px;
+}
+
+.code-gallery-container a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.code-gallery p {
+  font-family: 'Philosopher', sans-serif; 
+}
+.code-gallery h3 {
+  font-family: 'Luckiest Guy', cursive;
+} 
+
+.content-container img {
+   box-shadow: -4px 4px 5px 2px rgba(158, 158, 158, 0.502);
+}
+
+
+
+img {
+    width: 350px;
+    height: 200px;
+
+}
+
+/* Footer styles*/
+.footer_container {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  height: 40px;
+}
+
+footer p {
+  font-family: 'Philosopher', sans-serif;
+}
+ 
+.footer_container p {
+  font-size: 15px;
+  font-family: 'Philosopher', sans-serif; 
+  padding: 5px 0px 5px 0px;
+}
+ 
+.footer_container a i {
+  font-size: 20px;
+  margin: 0px 20px 0px 20px;
+  color: black;
+}
+
+.footer_container #copyright {
+   font-size: 11px;
+}
+
+#fb {
+  color: rgb(24, 119, 242);
+}
+
+#link {
+  color:rgb(30, 99, 182);
+}

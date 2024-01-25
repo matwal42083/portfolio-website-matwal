@@ -1,0 +1,52 @@
+.grid {
+    width:600px;
+    height:600px; 
+    border: 4px solid rgb(184, 1, 1);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    
+
+    
+}
+
+.body {
+    color: white;
+}
+
+.grid div {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.invader {
+    background-color: rgb(136, 220, 9);
+    border-radius: 50px;
+}
+
+.shooter {
+    background-color: rgba(62, 62, 81, 0.872);
+}
+
+.laser {
+    background-color: rgba(235, 5, 5, 0.904);
+}
+
+.boom {
+    background-color: rgb(255, 10, 47);
+}
+
+.body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+
+header {
+    background:-webkit-linear-gradient(top, rgb(239, 46, 32) 8%, rgb(255, 0, 0) 3%, black 15%);
+    padding: 20px 0px 0px 0px;
+}

@@ -1,0 +1,316 @@
+/*   font-family: 'Anton', sans-serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Lobster Two', sans-serif;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Passion One', sans-serif;
+font-family: 'Paytone One', sans-serif;
+font-family: 'Philosopher', sans-serif;    */
+
+/* Header flexbox layout */
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  flex-direction: row;
+  flex-wrap:  nowrap;
+  gap: 20px;
+  background-color:rgba(34, 34, 57, 0.864);
+  padding: 20px 0px 20px 0px;
+  box-shadow: 6px 6px 5px rgba(102, 102, 102, 0.682);
+ }
+
+
+
+.side-headline h2 {
+    margin: 0px 0px 15px 0px;
+    font-family: 'Lobster Two', sans-serif;
+    color:#217eac;
+   }
+   
+   .toggle-btn {
+    background-color: #217eac;
+    padding: 6px 3px 5px 3px;
+    height: 20px;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0px 0px 0px 15px;
+    border: 2px solid black;
+   
+   }
+
+
+
+
+   /* Navbar stlyes*/
+   .nav {
+    font-size: 20px;
+    line-height: 2px;
+
+   }
+
+   .nav li a {
+    font-family: 'Passion One', sans-serif;
+    line-height: 2px;
+    margin: 0px 25px 0px 25px;
+
+   }
+
+   li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+   
+   }
+
+   li {
+    list-style: none;
+    list-style-position: inside;
+    display: inline;
+    margin: 0px 20px 0px 20px;
+   }
+
+  
+  .nav li a:hover {
+    color:#217eac;
+  }
+  
+   
+   .contact-form h3 {
+    font-family: 'Lobster Two', sans-serif;
+   }
+    
+   .contact-form p {
+    font-family: 'Philosopher', sans-serif; 
+   }
+
+
+
+   input {
+    font-family: 'Lobster Two', sans-serif;
+   }
+
+   label {
+    font-family: 'Lobster Two', sans-serif;
+    margin: 0px 0px 0px 55px;
+   }
+
+   .contact-info {
+    font-family: 'Lobster Two', sans-serif;
+   }
+
+
+  .contact-info h4 {
+      position: relative;
+      bottom:10px;
+  }
+
+
+
+li a i {
+    font-size: 30px;
+
+}
+.contact-form {
+  border: 1px solid black;
+  margin: 20px 0px 20px 0px;
+  padding: 10px 8px 10px 8px;
+  background-color: rgba(93, 93, 132, 0.382);
+  width:40%;
+}
+
+.contact-form h3  {
+   text-align: center;
+}
+
+input {
+    margin: 15px 0px 15px 55px;
+    display: block;
+    box-shadow: -2px 2px 2px rgba(110, 110, 110, 0.614);
+    border: 2px solid rgba(0, 0, 0, 0.863);
+    background-color: rgba(237, 237, 237, 0.163);
+    border-radius: 4px;
+}
+
+textarea {
+  box-shadow: -2px 2px 2px rgba(130, 129, 129, 0.614);
+  margin: 0px 0px 0px 55px;
+  background-color: rgba(216, 216, 216, 0.425);
+
+
+}
+input[type='submit'] {
+  background-color: rgba(8, 26, 223, 0.646);
+  padding: 5px 8px;
+  margin: 20px 0px 20px 115px;
+  border-radius: 4px;
+}
+
+/* Functionality for the inputs feilds to shake*/
+input:invalid {
+  animation: shake 300ms;
+}
+
+@keyframes shake {
+  0%, 100% {transform: translate(0); }
+  25% {transform: translate(0.125rem); }
+  75% {transform: translate(-0.125rem); }
+}
+/* twitter templet style*/
+.container-info {
+  width: 75%;
+  height: 395px;
+  padding: 5px 10px 5px 10px;
+  box-shadow: 6px 6px 5px rgba(88, 88, 88, 0.735);
+  border:0.01rem solid rgba(122, 121, 121, 0.216);
+  border-radius: 5px;
+  position: relative;
+  bottom: 125px;
+
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.header {
+ display:flex;
+ 
+}
+.header .profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  padding:0px 0px 0px 0px;
+  margin-top:2px;
+}
+.header .profile-name {
+  display:flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.header .follow-btn {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 7px 7px 7px;
+  margin: 0 0 0 auto;
+  font-size: 35px;
+  background-color:rgb(34, 34, 57);
+  color:white;
+  border-radius: 50%;
+  border: 3px solid gold;
+  position: relative;
+  bottom:3px;
+  margin-top: 5px;
+}
+.header .follow-btn button {
+  border-radius: 3px;
+  padding: 5px;
+}
+.header h3, .header h4 {
+  display:flex;
+  margin: 0;
+}
+.goals li {
+  display: block;
+ 
+}
+.goals ul {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+#inner p {
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#inner hr {
+  margin: 20px 0;
+  border-style: solid;
+  opacity: 0.1;
+}
+.footer-tag {
+display:flex;
+
+}
+.footer-tag .stats {
+  display:flex;
+  font-size: 15px;
+}
+
+.footer-tag .contact {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom:15px;
+}
+.footer-tag .contact a {
+  color: black;
+  text-decoration: none;
+}
+.footer-tag .stats strong {
+  font-size: 18px;
+}
+.footer-tag .stats .school {
+  margin-left: 25px;
+  position: relative;
+  bottom: 17px;
+}
+.footer-tag .cta {
+  margin-left: auto;
+}
+.footer-tag .cta a {
+  color:black;
+  border: 0;
+  font-size: 25px;
+  position: relative;
+  bottom: 15px;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+/* Footer styles*/
+.footer_container {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  height: 40px;
+}
+
+footer p {
+  font-family: 'Philosopher', sans-serif;
+}
+ 
+.footer_container p {
+  font-size: 15px;
+  font-family: 'Philosopher', sans-serif; 
+  padding: 5px 0px 5px 0px;
+}
+ 
+.footer_container a i {
+  font-size: 20px;
+  margin: 0px 20px 0px 20px;
+  color: black;
+}
+
+.footer_container #copyright {
+   font-size: 11px;
+}
+
+#fb {
+  color: rgb(24, 119, 242);
+}
+
+#link {
+  color:rgb(30, 99, 182);
+}
