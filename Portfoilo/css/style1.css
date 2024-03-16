@@ -26,9 +26,10 @@ header {
   justify-content: space-evenly;
   align-items: space-evenly;
   flex-direction: row;
-  flex-wrap:  nowrap;
+  flex-wrap: nowrap;
+  flex-shrink: inherit;
   gap: 20px;
-  padding: 20px 0px 20px 0px;
+  padding:20px 0px 20px 0px;
   width:100%;
   height: auto;
   box-shadow: 6px 6px 5px rgba(102, 102, 102, 0.682);
@@ -48,6 +49,8 @@ header {
     font-size: 14px;
     border: 2px solid black;
     margin: 0px 0px 0px 10px;
+    position: relative;
+    
 
 }
 
@@ -63,20 +66,25 @@ img {
     border-radius: 50%;
     border: 5px solid #217eac;
 }
+.container{
+  background-color: rgba(195, 194, 194, 0.353);
+}
 
-.content h3 {
+.content1 h3 {
   font-family: 'Lobster Two', sans-serif; 
 }
 
-.content p {
+.content1 p {
   font-family: 'Philosopher', sans-serif; 
-  background-color: rgba(195, 194, 194, 0.353);
-  padding: 20px 20px 20px 20px;
   text-indent: 45px;
   word-spacing: 0.015em;
   font-size: 17px;
   letter-spacing: 0.0050em;
   box-shadow: 6px 6px 5px rgba(134, 134, 134, 0.412);
+  padding: 10px 10px 10px 10px;
+  background: linear-gradient( rgba(227, 216, 199, 0.622)25%, rgba(195, 186, 173, 0.622)50%, rgba(188, 180, 163, 0.622)100%);
+  border: 1px solid rgba(99, 113, 120, 0.416);
+  border-radius: 5px;
 }
 
  .container_head h2 {
@@ -94,7 +102,11 @@ img {
     height: auto;
     margin: 0px 0px 0px 0px;
 }
+/* the penguin styles*/
 
+
+
+/* penguin styles ends*/
 /* Styles for the nav links*/
 
 .nav li a {
