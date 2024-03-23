@@ -91,6 +91,7 @@ font-family: 'Philosopher', sans-serif;           */
   padding: 10px 20px 10px 20px;
   box-shadow: 6px 7px 7px rgba(122, 122, 122, 0.424);
   border-radius: 5px;
+ 
 }
 
 
@@ -99,6 +100,7 @@ font-family: 'Philosopher', sans-serif;           */
   background-color: rgba(183, 183, 183, 0.219);
   padding-top: 2px;
   padding-bottom: 2px;
+  box-shadow: 3px 4px 4px rgba(124, 123, 123, 0.3);
 }
 
 h1{
@@ -116,14 +118,40 @@ h2 {
 }
 .goals {
   background-color: rgba(183, 183, 183, 0.219);
-  padding: 5px 5px 5px 5px;
-  text-indent: 35px;
-  font-size: 16px;
-  letter-spacing: 0.035rem;
-  margin-bottom: 10px;
   margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 20px 15px 15px 15px;
+  text-indent: 35px;
+  letter-spacing: 0.035rem;
+  font-size: 16px;
+  line-height: 20px;
+  box-shadow: 3px 4px 4px rgba(124, 123, 123, 0.3);
 }
   
+
+.Hobbies{
+  background-color: rgba(183, 183, 183, 0.219);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 20px 15px 15px 15px;
+  text-indent: 35px;
+  letter-spacing: 0.035rem;
+  font-size: 16px;
+  line-height: 20px;
+  box-shadow: 3px 4px 4px rgba(124, 123, 123, 0.3);
+}
+
+.edu {
+  background-color: rgba(183, 183, 183, 0.219);
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 20px 15px 15px 15px;
+  text-indent: 35px;
+  letter-spacing: 0.035rem;
+  font-size: 16px;
+  line-height: 20px;
+  box-shadow: 3px 4px 4px rgba(124, 123, 123, 0.3);
+}
 
 #position {
   font-size: 18px;
@@ -142,6 +170,7 @@ h1 {
   letter-spacing: 0.035rem;
   font-size: 16px;
   line-height: 20px;
+  box-shadow: 3px 4px 4px rgba(124, 123, 123, 0.3);
 }
 .header {
   text-align: center;
