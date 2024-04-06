@@ -1,6 +1,6 @@
 # portfolio-website-matwal :octocat:
  ### Matthew (matwal) Walton
-![Screenshot 2024-03-15 171036](https://github.com/matwal42083/portfolio-website-matwal/assets/115494989/43ce7031-6b30-40c6-8aa2-021587cc064d)
+ ![Screenshot 2024-03-15 171036](https://github.com/matwal42083/portfolio-website-matwal/assets/115494989/8afcf646-c750-4ef1-bbb8-4f36cc907a01)
 ## website url here:
  My name is Matthew (matwal) Walton and I'm an American web and mobile developer this is my professional repository for my Portfolio Website. I attended s code boot camp called Fullstack Academy X Amazon career choice program. I also learned how to code with freeCodeCamp, Solo Learn, and Google Developer. This repository's main purpose is to showcase my GitHub :octocat: skills. I want to go back to college at SNHU for my bachelor's degree. I want to work for companies like Spotify, Google, Microsoft, Meta, IBM Etc.
 
@@ -22,6 +22,7 @@
 Includes:
 * :heavy_check_mark:HTML
 * :heavy_check_mark:CSS
+
 * :heavy_check_mark:Javascript
 * :heavy_check_mark:React JS
 * :heavy_check_mark:bootstrap
