@@ -7,6 +7,21 @@ font-family: 'Paytone One', sans-serif;
 font-family: 'Philosopher', sans-serif;     */
 
 /* Header flexbox layout */
+/* Your regular styles here */
+
+/* Dark mode styles - make these specific enough */
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .nav a,
+body.dark-mode i,
+body.dark-mode a {
+  color: white;
+}
+
+
 .header-container {
   background-color: rgba(34, 34, 57, 0.936);
   display: flex;
@@ -29,7 +44,7 @@ font-family: 'Philosopher', sans-serif;     */
    }
    
    .toggle-btn {
-    background-color: rgb(30, 99, 182);
+    background-color:#217eac;
     padding: 6px 3px 5px 3px;
     height: 20px;
     width: 100px;
@@ -68,19 +83,34 @@ font-family: 'Philosopher', sans-serif;     */
     letter-spacing: 0.0140em;
     text-align: center;
     padding: 10px 5px 10px 5px;
-    background-color: rgba(22, 27, 34, 0.716);
+    background-color: rgba(29, 36, 45, 0.99);
     border-radius: 3px;
-    box-shadow: 5px 6px 6px rgba(125, 125, 125, 0.587);
+    box-shadow: 5px 6px 6px rgba(118, 118, 118, 0.587);
+    color: white;
    }
    .fa-codepen {
     position: relative;
     bottom:1px; 
+   }
+   .border{
+    border: 0.0040em solid rgb(255, 255, 255);
+    margin: 0.0010em 0.0010em 0.0010em 0.0010em;
+    padding: 10px 5px 10px 5px;
+   }
+   .border1{
+    border: 0.0040em solid rgb(0, 0, 0);
+    margin: 0.0010em 0.0010em 0.0010em 0.0010em;
+    padding: 10px 5px 10px 5px;
+   }
+   .github-1 a {
+    color: white;
    }
 
    .fa-github-alt {
     font-size: 22px;
     position: relative;
     top:1px;
+    color:white;
    }
    .code-gallery2 {
     display: flex;

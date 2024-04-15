@@ -8,6 +8,22 @@ font-family: 'Philosopher', sans-serif;           */
 
 
 /* header .header-container flexbox layout and the Dark mode button*/
+/* Your regular styles here */
+
+/* Dark mode styles - make these specific enough */
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .nav a,
+body.dark-mode i,
+body.dark-mode a {
+  color: white;
+}
+
+
+
 
    .side-headline h1 {
     margin: 0px 0px 0px 0px;

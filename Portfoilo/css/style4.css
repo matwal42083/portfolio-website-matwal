@@ -7,6 +7,21 @@ font-family: 'Paytone One', sans-serif;
 font-family: 'Philosopher', sans-serif;    */
 
 /* Header flexbox layout */
+/* Your regular styles here */
+
+/* Dark mode styles - make these specific enough */
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.dark-mode .nav a,
+body.dark-mode i,
+body.dark-mode a {
+  color: white;
+}
+
+
 .header-container {
   display: flex;
   justify-content: space-evenly;
