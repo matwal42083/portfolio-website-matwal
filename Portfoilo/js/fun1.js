@@ -1,50 +1,66 @@
 
+//
 
+
+// Dark Mode Light Mode functionality
+// Declaring the Variables for Dark Mode, target the body and the toggle button
 const body = document.querySelector('body');
 const toggle = document.querySelector('#toggle-btn');
 
-function enableDarkMode() {
-  body.classList.add('dark-mode');
-  localStorage.setItem('darkMode', 'true');
-}
 
 function disableDarkMode() {
+  body.classList.add('light-mode');
   body.classList.remove('dark-mode');
-  localStorage.setItem('darkMode', 'false');
+  localStorage.setItem('lightMode', 'true');
+  localStorage.setItem('darkMode','false');
+  toggle.innerText = 'Light';
+  toggle.classList.add('fa-sun');
+  toggle.classList.remove('fa-moon');
 }
 
-function toggleMode() {
-  body.classList.toggle('dark-mode');
-  const isDarkMode = body.classList.contains('dark-mode');
+function enableDarkMode() {
+  body.classList.add('dark-mode');
+  body.classList.remove('light-mode');
+  localStorage.setItem('darkMode', 'true');
+  localStorage.setItem('lightMode','false');
+  toggle.innerText = 'Dark';
+  toggle.classList.remove('fa-sun');
+  toggle.classList.add('fa-moon');
+}
 
-  toggle.innerText = isDarkMode ? 'Dark' : 'Light';
-  toggle.classList.toggle('fa-moon');
-  toggle.classList.toggle('fa-sun');
+
+
+function toggleMode() {
+  const isDarkMode = body.classList.contains('dark-mode');
+  const isLightMode = body.classList.contains('light-mode');
+  if(isLightMode) {  
+  enableDarkMode();
+  }else if (isDarkMode) {
+    disableDarkMode();
+  }
 }
 
 // Initial setup based on local storage
-const isDarkMode = localStorage.getItem('darkMode');
-if (isDarkMode === 'true') {
-  enableDarkMode(); 
+const isLightMode = localStorage.getItem('lightMode');
+const isDarkMode = localStorage.getItem('darkMode'); 
+if (isLightMode === 'true') {
+   disableDarkMode();
+} else if (isDarkMode === 'true'){
+  enableDarkMode();
 }
 
 // Event listener for the toggle button
 toggle.addEventListener('click', toggleMode);
 // On each page load
 window.addEventListener('load', () => { 
-    const isDarkMode = localStorage.getItem('darkMode');
-    if (isDarkMode === 'true') {
-        enableDarkMode(); 
-    }
-
-
-});
-
-
-
-
-
-
+  const isLightMode = localStorage.getItem('lightMode');
+  const isDarkMode =  localStorage.getItem('darkMode'); // 
+  if (isLightMode === 'true') { 
+    disableDarkMode();       
+  } else if (isDarkMode === 'true') {
+    enableDarkMode(); 
+  }
+});                                                    
 
 
 
@@ -55,178 +71,110 @@ window.addEventListener('load', () => {
 
 
 /*
-// Get references to the body and toggle elements
-const body = document.querySelector('body');
-const toggle = document.querySelector('#toggle-btn');
+const previousButton = document.querySelector(".left-arrow");
+const nextButton = document.querySelector(".right-arrow");
+const breadcrumbs = document.querySelector(".breadcrumbsDisplay");
 
-// Define the functions to enable and disable dark mode
-function enableDarkMode() {
-    body.classList.add('dark-mode');
-    localStorage.setItem('darkMode', 'true');
-    toggle.innerText = 'Dark';
-    // Add any other style changes for dark mode here...
-}
-
-function enableLightMode() {
-    body.classList.remove('dark-mode');
-    localStorage.setItem('darkMode', 'false');
-    toggle.innerText = 'Light';
-    // Add any other style changes for light mode here...
-}
-
-// Define the function to toggle between dark mode and light mode
-function toggleMode() {
-   
-    const isDarkMode = body.classList.contains('dark-mode');
-    if (isDarkMode) {
-        enableLightMode();
-    } else {
-        enableDarkMode();
-    }
-}
-
-// Add an event listener to the toggle element
-toggle.addEventListener('click', toggleMode);
-
-// Check if user preference is stored in localStorage
-const isDarkMode = localStorage.getItem('darkMode');
-
-// Set initial mode based on user preference
-isDarkMode === 'true' ? enableDarkMode() : enableLightMode();
-
-
-
-
-
-function toggleMode() {
-    body.classList.toggle('dark-mode');
-    const isDarkMode = body.classList.contains('dark-mode');
-    toggle.innerText = isDarkMode ? 'Light' : 'Dark';
-
-    // Change nav links text color
-    const navLinks = document.querySelectorAll('.nav a');
-    navLinks.forEach(link => {
-        link.style.color = isDarkMode ? 'white' : 'black';
-    });
-
-    // Change nav links, <i> icons and <a> tags text color
-    const elementsToChange = document.querySelectorAll('.nav a, i, a');
-    elementsToChange.forEach(element => {
-        element.style.color = isDarkMode ? 'white' : 'black';
-    });
-}
-
-
-
-// Set initial mode based on user preference
-if (isDarkMode === 'true') {
-    toggleMode();
-}
-
-
-
-
-
-
-toggle.addEventListener('click', function() {
-    this.classList.toggle('fa-moon');
-    if(this.classList.toggle('fa-sun')) {
-        body.style.background = 'white';
-        body.style.color = 'black';
-        body.style.transition = '1s';
-        toggle.innerText = ' Light';
-
-
-
-        toggle.addEventListener('click', function() {
-            // Toggle between dark and light mode
-            if (body.classList.contains('dark-mode')) {
-                enableLightMode();
-            } else {
-                enableDarkMode();
-            }
-        }); 
-        // Change nav links text color to black
-        const navLinks = document.querySelectorAll('.nav a');
-        navLinks.forEach(link => {
-            link.style.color = 'black';
-            // Change nav links, <i> icons and <a> tags text color to black
-        const elementsToChange = document.querySelectorAll('.nav a, i, a');
-        elementsToChange.forEach(element => {
-        element.style.color = 'black';
-            });
-        });
-    } else {
-        body.style.background = 'black';
-        body.style.color = 'white';
-        body.style.transition = '1s';
-        toggle.innerText = ' Dark';
-        body.style.background = 'black';
-        body.style.color = 'white';
-        body.style.transition = '1s';
-        toggle.innerText = ' Dark';
-   
-        // Change nav links text color to white
-        const navLinks = document.querySelectorAll('.nav a');
-        navLinks.forEach(link => {
-            link.style.color = 'white';
-        });
-        // Change nav links, <i> icons and <a> tags text color to white
-        const elementsToChange = document.querySelectorAll('.nav a, i, a');
-        elementsToChange.forEach(element => {
-            element.style.color = 'white';     
-        });
-    }
-});*/
-/*
-        
-      
-    } else {
-      
-   
-                });
-            }
-        });
-    }
+// Initial state (assuming you start on the first page)
+let currentPage = 1;
+const maxPages = 4; // Adjust this based on your actual number of pages
+const pages = [
+    { text: 'Home', href: './index1.html' },
+    { text: 'About', href: './index2.html' },
+    { text: 'Portfolio', href: './index3.html' },
+    { text: 'Contact', href: './index4.html' },
+]
+// Handle previous button click
+previousButton.addEventListener("click", () => {
+  if (currentPage > 1) {
+    currentPage--;
+    updateBreadcrumbs();
+    window.location.href = pages[currentPage-1].href;
+  }
+  previousButton.disabled = currentPage === 1;
 });
 
+// Handle next button click
+nextButton.addEventListener("click", () => {
+  if (currentPage < maxPages) {
+    currentPage++;
+    updateBreadcrumbs();
+    window.location.href = pages[currentPage-1].href;
+  }
+  nextButton.disabled = currentPage === maxPages;
+});
 
-const toggle = document.getElementById('toggle-btn');
-const body = document.querySelector('body');
+// Update breadcrumbs based on current page
+function updateBreadcrumbs() {
+  breadcrumbs.innerHTML = ""; // Clear existing breadcrumbs
 
+  for (let i = 1; i <= maxPages; i++) { // Change this line
+    const listItem = document.createElement("li");
+    const link = document.createElement("a");
+    listItem.classList.add("breadcrumb-item");
+    link.textContent = pages[i-1].text;
+    link.href = pages[i-1].href;
 
-toggle.addEventListener('click', function() {
-    this.classList.toggle('fa-moon');
-    if(this.classList.toggle('fa-sun')) {
-        body.style.background = 'white';
-        body.style.color = 'black';
-        body.style.transition = '1s';
-        toggle.innerText = ' Light';
+    if (i === currentPage) {
+      listItem.classList.add("active"); // Mark current page as active
+      link.removeAttribute("href"); // Remove link for current page
+    }
 
-       
-     //adding event lisyener to the toggle button 
-toggle.addEventListener('click', toggleMode);   
-        
-// Define the functions to enable and disable dark mode
-function enableDarkMode() {
-    body.classList.add('dark-mode');
-    localStorage.setItem('darkMode', 'true');
-    toggle.innerText = 'Dark';
+    listItem.appendChild(link);
+    breadcrumbs.appendChild(listItem);
+  }
 }
 
-// Define the functions to enable and disable light mode
-function enableLightMode() {
-    body.classList.remove('dark-mode');
-    localStorage.setItem('darkMode', 'false');
-    toggle.innerText = 'Light';
+// Initial setup
+updateBreadcrumbs();
+previousButton.disabled = currentPage === 1;
+nextButton.disabled = currentPage === maxPages;
+
+/*
+const previousButton = document.querySelector(".left-arrow");
+const nextButton = document.querySelector(".right-arrow");
+const breadcrumbs = document.querySelector(".breadcrumbsDisplay");
+
+// Initial state
+let currentPage = 1;
+const maxPages = 4; 
+const pages = [
+{ text: 'Home |', href: './index1.html' },
+{ text: 'About |', href: './index2.html' },
+{ text: 'Portfolio |', href: './index3.html' },
+{ text: 'Contact |', href: './index4.html' }, 
+]; // (Your pages array)
+
+// ... (event listeners as before)
+
+function updateBreadcrumbs() {
+  // Remove existing breadcrumb links
+  while (breadcrumbs.firstChild) {
+    breadcrumbs.removeChild(breadcrumbs.firstChild);
+  }
+
+  for (let i = 1; i <= maxPages; i++) { 
+    const listItem = document.createElement("li");
+    const link = document.createElement("a");
+    listItem.classList.add("breadcrumb-item");
+
+    link.textContent = pages[i - 1].text; // Access pages with i-1
+    link.href = pages[i - 1].href;
+
+    if (i === currentPage) {
+      listItem.classList.add("active"); 
+      link.removeAttribute("href");
+    }
+
+    listItem.appendChild(link);
+    breadcrumbs.appendChild(listItem);
+  }
 }
-        
-    // Set initial mode based on user preference
-isDarkMode === 'true' ? enableDarkMode() : enableLightMode();    
-        
-        
-        
-        
-        
-        
-        */
+
+// Initial setup 
+updateBreadcrumbs();
+previousButton.disabled = currentPage === 1;
+nextButton.disabled = currentPage === maxPages; 
+*/
+
+

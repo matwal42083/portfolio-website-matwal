@@ -111,6 +111,38 @@ body.dark-mode a {
     margin: 0px 0px 0px 55px;
    }
 
+   
+/* Breadcrumbs stylev*/
+  .left-arrow, .right-arrow, a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 1px;
+
+  }
+  
+  .breadcrumb-item {
+    /* Add your styles here. For example: */
+    list-style: none;
+    list-style-position: inside;
+    display: inline;
+    margin: 0px 20px 0px 20px;
+    font-size: 12px;
+  }
+
+ 
+  
+  .breadcrumbsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    gap: 20px;
+
+  }
+
+
    .contact-info {
     font-family: 'Lobster Two', sans-serif;
    }
@@ -296,31 +328,26 @@ display:flex;
 
 
 /* Footer styles*/
-.footer_container {
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  height: 40px;
-}
-
 footer p {
   font-family: 'Philosopher', sans-serif;
+  text-align: center;
 }
  
-.footer_container p {
-  font-size: 15px;
-  font-family: 'Philosopher', sans-serif; 
-  padding: 5px 0px 5px 0px;
-}
+
  
-.footer_container a i {
+footer a i {
+  position: relative;
   font-size: 20px;
   margin: 0px 20px 0px 20px;
   color: black;
+  left: 420px;
 }
 
-.footer_container #copyright {
+footer #copyright {
    font-size: 11px;
+ 
 }
+
 
 #fb {
   color: rgb(24, 119, 242);

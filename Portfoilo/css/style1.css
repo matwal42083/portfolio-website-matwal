@@ -21,6 +21,19 @@ body.dark-mode a {
   color: white;
 }
 
+/*Light Mode styles */
+body.light-mode {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+body.light-mode .nav a,
+body.light-mode i,
+body.light-mode a {
+  color: rgb(0, 0, 0);
+}
+/* HEADER STYLES WITH FLEXBOX*/
+
 
 
 header {
@@ -32,15 +45,71 @@ header {
   
 }
 
+                
+img {
+  width: 185px;
+  height: 185px;
+  margin: 0px 0px 0px 18px;
+  border-radius: 50%;
+  border: 5px solid #217eac;
+}
 
-/* Flexbox for the header*/
+.container_head h2 {
+font-family: 'Lobster Two', sans-serif;
+}
+
+.logo h2 {
+color:#217eac;
+font-size: 28px;
+font-weight: bold;
+text-align: center;
+width: auto;
+height: auto;
+margin: 0px 0px 0px 0px;
+}
+
+/* NAV BAR STYLES*/
+.nav .navBtn a {
+  font-family: 'Passion One', sans-serif;
+  padding: 4px 0px 4px 0px;
+  font-size: 20px;
+  margin: 0px 20px 0px 20px;
+}
+
+
+
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul {
+    list-style: none;
+    list-style-position: inside;
+    line-height: 1.5px;
+    
+  
+}
+
+.navBtn {
+  display: inline;
+  margin: 0px 20px 0px 20px;
+   
+}
+.nav li a:hover {
+  color:#217eac;
+}
+/* NAV BAR STYLES ENDS*/
+
+
 
 .container_head {
   display: flex;
   justify-content: space-evenly;
   align-items: space-evenly;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap;            
   flex-shrink: inherit;
   gap: 20px;
   padding:20px 0px 20px 0px;
@@ -50,7 +119,7 @@ header {
 }
 
 
-/* Styles for Dark mode feature*/
+
 
 
 .toggle-btn {
@@ -58,7 +127,7 @@ header {
     padding: 6px 3px 5px 3px;
     height: 20px;
     width: 100px;
-    border-radius: 20px;
+    border-radius: 20px;              /* STYLES FOR THE DARK & LIGHT MODDE SWITCH */
     text-align: center;
     font-size: 14px;
     border: 2px solid black;
@@ -69,26 +138,26 @@ header {
 }
 
 
-/* End of style for dark mode*/
 
-/* My image and text around it*/
 
-img {
-    width: 185px;
-    height: 185px;
-    margin: 0px 0px 0px 18px;
-    border-radius: 50%;
-    border: 5px solid #217eac;
-}
-.container{
-  background-color: rgba(195, 194, 194, 0.353);
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content1 h3 {
   font-family: 'Lobster Two', sans-serif; 
 }
-
-.content1 p {
+.content1 {
+  margin: 30px 0px 10px 0px;
   font-family: 'Philosopher', sans-serif; 
   text-indent: 45px;
   word-spacing: 0.015em;
@@ -101,86 +170,65 @@ img {
   border-radius: 5px;
 }
 
- .container_head h2 {
-  font-family: 'Lobster Two', sans-serif;
- }
+ 
 
 
 
-.logo h2 {
-    color:#217eac;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-    width: auto;
-    height: auto;
-    margin: 0px 0px 0px 0px;
-}
-/* the penguin styles*/
-
-
-
-/* penguin styles ends*/
-/* Styles for the nav links*/
-
-.nav li a {
-  font-family: 'Passion One', sans-serif;
-  padding: 4px 0px 4px 0px;
-  font-size: 20px;
-  margin: 0px 20px 0px 20px;
-}
-
-
-
-
-a {
+/* Breadcrumbs stylev*/
+  .left-arrow, .right-arrow, a {
     text-decoration: none;
     color: black;
-}
+    position: relative;
+    top: 1px;
 
-ul {
+  }
+  
+  .breadcrumb-item {
+    /* Add your styles here. For example: */
     list-style: none;
     list-style-position: inside;
-    line-height: 1.5px;
-    
-  
+    display: inline;
+    margin: 0px 20px 0px 20px;
+    font-size: 12px;
+  }
+ 
+.breadcrumb-item::after {
+   content: "> ";
 }
 
-li {
-  display: inline;
-  margin: 0px 20px 0px 20px;
-   
-}
-.nav li a:hover {
-  color:#217eac;
-}
+  .breadcrumbsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    gap: 20px;
 
-/* main content styles for the paragraph*/
-.footer_container {
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  height: 40px;
-}
+  }
+
+/* Footer Styles*/
+
 
 footer p {
   font-family: 'Philosopher', sans-serif;
+  text-align: center;
 }
  
-.footer_container p {
-  font-size: 15px;
-  font-family: 'Philosopher', sans-serif; 
-  padding: 5px 0px 5px 0px;
-}
+
  
-.footer_container a i {
+footer a i {
+  position: relative;
   font-size: 20px;
   margin: 0px 20px 0px 20px;
   color: black;
+  left: 420px;
 }
 
-.footer_container #copyright {
+footer #copyright {
    font-size: 11px;
+ 
 }
+
 
 #fb {
   color: rgb(24, 119, 242);
@@ -190,8 +238,31 @@ footer p {
   color:rgb(30, 99, 182);
 }
 
+
+
+
+
+
+
+
 /* @Media Query styles here*/
 
+@media (prefers-color-scheme: light) {
+  body {
+/*Light Mode styles */
+body.light-mode {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+body.light-mode .nav a,
+body.light-mode i,
+body.light-mode a {
+  color: rgb(0, 0, 0);
+}
+
+  }
+}
 @media (max-width: 988px) {
   .container_head li{
     display: block;

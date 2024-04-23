@@ -8,6 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Lobster+Two:ital,wght@1,700&family=Luckiest+Guy&family=Passion+One&family=Paytone+One&family=Philosopher&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/36f7f4f045.js" crossorigin="anonymous"></script>
+    <script>
+     (function() {
+        const isLightMode = localStorage.getItem('lightMode') === 'true';
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        if (isLightMode) {
+          document.body.classList.add('light-mode');
+        } else {
+          document.body.classList.remove('dark-mode');
+        }
+     
+        if (isDarkMode) {
+            document.body.classList.add('dark-mode');
+        } else {
+            document.body.classList.remove('light-mode');
+        }
+    })();
+    </script>
     <title>Contact page</title>
 </head>
 <body>
@@ -19,7 +36,7 @@
             <ul>
                 <li><a href="./index1.html">Home</a></li>
                 <li><a href="./index2.html">About</a></li>
-                <li><a href="./index3.html">Portfoilo</a></li>
+                <li><a href="./index3.html">Portfolio</a></li>
                 <li><a href="./index4.html">Contact</a></li>
             </ul> 
         </div>
@@ -27,7 +44,6 @@
             <i class="fa-regular fa-sun" id="toggle-btn"></i>
        </div>
     </div>
-
 <div class="contact-form-container">
         <div class="contact-form">
             <form action="mailto:matwal42083@gmail.com">
@@ -94,23 +110,18 @@
                 <div class="cta">
                     <a href="#"><i class="fa-brands fa-linkedin" id="link"></i></a>
                     <a href="#"><i class="fa-brands fa-github" id="git"></i></a>
-                    
        </div>
       </div> 
      </div>
     </div> 
-
-      <footer>
-        <hr>
-        <div class="footer_container">
-          <p>Checkout my social media or My GitHub Account</p>
-            <a href="#"><i class="fa-brands fa-facebook" id="fb"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin" id="link"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <p id="copyright">Copyright &copy; matthew walton</p>
-        </div>
-     </footer> 
+    <footer>
+      <p>Checkout my social media or My GitHub Account</p>
+        <a href="#"><i class="fa-brands fa-facebook" id="fb"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin" id="link"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <p id="copyright">Copyright &copy; matthew walton</p>
+     </footer>
     <script src="/js/fun1.js" defer></script>
 </body>
 </html>
