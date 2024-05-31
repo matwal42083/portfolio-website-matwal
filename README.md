@@ -38,3 +38,7 @@ I want to learn new *Things* in web and mobile development:
 * Learn more CLI commands and learn more about the computer's terminal.
 * Java
 * python
+
+>[!NOTE]
+> This repository is not yet deployed yet
+>
